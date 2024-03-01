@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="category-bar-container" class="category-bar"></div>
-    <div class="search-container">
+    <div class="search-container ">
       <input
+      class="border-2 border-slate-950"
         type="text"
         id="search-box"
         placeholder="type Here category name...."
       />
-      <button onclick="handleSearch()" id="search-btn">Search</button>
+      <button onclick="handleSearch()" id="search-btn" class="">Search</button>
     </div>
 
-    <div id="news-container" class="news-container">
-      
+    <div id="news-container" class="news-container grid grid-cols-3">
+      <!--  -->
+      <!-- <div class="">
+        
+      </div> -->
+      <!--  -->
     </div>
 
     <div id="loading-spiner" class="loading-spiner">
@@ -27,6 +34,6 @@
     </div>
 
     <!-- add javascript file -->
-    <script src="./app.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
